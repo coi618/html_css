@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="html,css,javascript,網頁設計">
+    <meta name="description" content="這是一份有關於網站設計的教學課程">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <title>商品名稱 - 商品分類 - 品牌名稱</title>
+
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+      /* 這裡是註解 */
+    </style>
+  </head>
+  <body>
+    
+    <p>這是段落文字</p>
+
+    &lt;
+    <br>
+    &gt;
+    <br>
+    &quot;
+    <br>
+    &apos;
+    <br>
+    &copy;
+    <br>
+    &amp;
+    <br>
+    &#169;
+    <br>
+    &yen;
+    <!--
+    小於
+    大於
+    雙引號
+    單引號
+    copyright
+    &
+    -->
+
+    <h1>這是 h1 標題</h1>
+    <h2>這是 h2 標題</h2>
+    <h3>這是 h3 標題</h3>
+    <h4>這是 h4 標題</h4>
+    <h5>這是 h5 標題</h5>
+    <h6>這是 h6 標題</h6>
+
+    <h1>這是內容標題</h1>
+    <p>這是段落元素</p>
+    <p>
+      這是段落
+      第二行
+      第三       行
+    </p>
+
+    <pre>
+      這是段落
+      第二行
+      第三       行
+    </pre>
+    <!-- <dl>
+      <dt>WWW</dt>
+      <dd>這是 World Wide Web 的意思</dd>
+      <dt>拿鐵咖啡</dt>
+      <dd>加了牛奶的咖啡</dd>
+    </dl> -->
+    <p><code>echo</code> 是一段php原始碼</p>
+    <p>以下是另一段程式，只是概念：</p>
+    <pre><code>
+      function test_func(){
+        alert("彈出訊息文字框");
+      }
+    </code></pre>
+
+    <!--
+      這是 html 註解符號
+      也可以是多行
+    -->
+
+    <p>時間：<time datetime="2020-10-11 20:00">2020年10月11日晚上8點</time></p>
+
+    <p><time datetime="2021-01-01">元旦</time>有放假嗎？</p>
+
+    <p>這是 <abbr title="HyperText Markup Language">HTML</abbr> 課程，介紹 abbr 標籤。</p>
+
+    <p>這是段落文字，想要在<br>這裡斷行。</p>
+
+    <hr>
+
+    <p>另起一個段落</p>
+
+    <p>這是段落的意思，一般文字大小為 16px</p>
+
+    <blockquote cite="https://zh.wikipedia.org/wiki/%E7%88%B1%E8%BF%AA%E7%94%9F">
+      湯瑪斯·阿爾瓦·愛迪生（英語：Thomas Alva Edison，1847年2月11日－1931年10月18日），科學家、發明家、企業家、工程師，拥有眾多重要的發明專利，被傳媒授予「門洛帕克的奇才」稱號的他，是世界上第一個使用大量生產原則和其工業研究實驗室來進行發明創造的人。他也是庫伯聯盟學院的傑出校友。
+    </blockquote>
+
+
+    <p>段落一</p>
+    <p>段落二</p>
+
+    <code>echo</code>
+    <code>function</code>
+
+    <abbr>HTML</abbr>
+    <abbr>WWW</abbr>
+
+    <h1>標題一</h1>
+    <h1>標題二</h1>
+
+    <ul>
+      <li>第一項</li>
+      <li>第二項</li>
+      <li>第三項</li>
+      <li>
+        <p>這是段落文字，不能放在 ul 標籤的第一層子元素</p>
+      </li>
+    </ul>
+
+    <ol>
+      <li>第一項</li>
+      <li>第二項</li>
+      <li>第三項</li>
+    </ol>
+
+    <a href="https://tw.yahoo.com" target="mywindow">連到 yahoo</a>
+    <a href="https://google.com" target="mywindow">連到 google</a>
+
+
+
+    <figure>
+      <figcaption>該獨立內容的標題</figcaption>
+      <img src="./images/1.jpg">
+
+    </figure>
+
+    <figure>
+      <p>這是詩歌這是詩歌這是詩歌這是詩歌這是詩歌</p>
+      <figcaption>這是該獨立內容標題</figcaption>
+    </figure>
+
+    <table>
+      <thead>
+        <tr>
+          <th>標題一</th>
+          <th>標題二</th>
+          <th>標題三</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">第一列第一欄</td>
+          <td>第一列第二欄</td>
+          <td>第一列第三欄</td>
+        </tr>
+        <tr>
+          <!-- <td>第二列第一欄</td> -->
+          <td>第二列第二欄</td>
+          <td>第二列第三欄</td>
+        </tr>
+        <tr>
+          <td>第三列第一欄</td>
+          <td colspan="2">第三列第二欄</td>
+          <!-- <td>第三列第三欄</td> -->
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>表尾第一欄</td>
+          <td>表尾第二欄</td>
+          <td>表尾第三欄</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <span>這是 span1</span>
+    <span>這是 span2</span>
+
+    <div>這是 div1</div>
+    <div>這是 div2</div>
+
+    <div>
+      <p>這是段落的<span>文字</span></p>
+      <p>這是另一段落</p>
+    </div>
+
+    <br>
+
+    <!--
+    <iframe src="https://dictionary.cambridge.org/"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/E2dbzvDqQEc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14460.009297514767!2d121.55578413202089!3d25.03399518551134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5L-h576p6Lev5LqU5q61N-iZnw!5e0!3m2!1szh-TW!2stw!4v1605016987567!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <iframe src="https://tw.yahoo.com/"></iframe>
+    -->
+
+    <img src="./images/my.svg" style="border: 1px solid black;">
+
+    <canvas style="border: 1px solid red;" id="mycanvas"></canvas>
+
+    <video controls poster="https://picsum.photos/id/406/500/300" muted loop disablePictureInPicture controlsList="nodownload" playsinline>
+      <source src="https://alldata.sgp1.digitaloceanspaces.com/videos/small.mp4" type="video/mp4">
+      <source src="https://alldata.sgp1.digitaloceanspaces.com/videos/small.ogv" type="video/ogg">
+      如果瀏覽器不支援 HTML5 video 標籤，就出現這裡的文字
+    </video>
+
+    <!--
+    影片網址：
+    https://alldata.sgp1.digitaloceanspaces.com/videos/small.mp4 type="video/mp4"
+    https://alldata.sgp1.digitaloceanspaces.com/videos/small.ogv type="video/ogg"
+
+    常用屬性：
+    controls
+    poster="https://picsum.photos/id/406/500/300"
+    autoplay
+    muted
+    loop
+    disablePictureInPicture
+    controlsList="nodownload"
+    playsinline
+    -->
+
+    <audio controls autoplay="autoplay" controlsList="nodownload">
+      <source src="https://www.w3schools.com/jsref/horse.mp3" type="audio/mpeg">
+      <source src="https://www.w3schools.com/jsref/horse.ogg" type="audio/ogg">
+      如果瀏覽器不支援 HTML5 audio 標籤，就出現這裡的文字
+    </audio>
+
+    <form action="#" method="#">
+      <label for="username">帳號：</label>
+      <input type="text" placeholder="這是提示文字" id="username">
+
+      <label>
+        email：
+        <input type="text" placeholder="提示文字" value="文字" disabled>
+      </label>
+
+      <div>
+        <input type="password">
+      </div>
+
+      <div>
+        <input type="hidden" value="text1">
+        <input type="text" value="text2">
+      </div>
+
+      <div>
+        興趣：
+        <input type="radio" name="habits" id="sport" checked>
+        <label for="sport">運動</label>
+        <input type="radio" name="habits" id="movie">
+        <label for="movie">電影</label>
+      </div>
+
+      <div>
+        旅遊過的國家：
+        <input type="checkbox" name="countries[]" id="taiwan" checked>
+        <label for="taiwan">台灣</label>
+
+        <input type="checkbox" name="countries[]" id="japan" checked>
+        <label for="japan">日本</label>
+
+        <input type="checkbox" name="countries[]" id="korean">
+        <label for="korean">韓國</label>
+      </div>
+
+      <textarea placeholder="提示文字" rows="10" cols="50">這裡放內容</textarea>
+      <br>
+
+      <select>
+        <optgroup label="分群一">
+          <option value="1">選項一</option>
+          <option value="2">選項二</option>
+        </optgroup>
+        <optgroup label="分群二">
+          <option value="3" selected>選項三</option>
+          <option value="4">選項四</option>
+          <option value="5">選項五</option>
+        </optgroup>
+      </select>
+
+
+      <select multiple>
+        <optgroup label="分群一">
+          <option value="1">選項一</option>
+          <option value="2">選項二</option>
+        </optgroup>
+        <optgroup label="分群二">
+          <option value="3" selected>選項三</option>
+          <option value="4">選項四</option>
+          <option value="5">選項五</option>
+        </optgroup>
+      </select>
+
+      <button type="button">一般按鈕</button>
+      <!-- <input type="button" value="一般按鈕"> -->
+
+      <button type="submit">資料送出按鈕</button>
+      <!-- <input type="submit" value="資料送出按鈕"> -->
+
+    </form>
+
+
+    <p>WWW<sup>[1]</sup>、H<sub>2</sub>O</p>
+
+    <p>這是<strong>段落</strong>文字</p>
+    <p>這是<em>段落</em>文字</p>
+    <p>這是<i>段落</i>文字</p>
+    <p>這是<mark>段落文字</mark></p>
+
+    <!--
+    音訊網址：
+    https://www.w3schools.com/jsref/horse.mp3 type="audio/mpeg"
+    https://www.w3schools.com/jsref/horse.ogg type="audio/ogg"
+
+    常用屬性：
+    controls
+    autoplay
+    muted
+    loop
+    controlsList="nodownload"
+    -->
+
+    <form action="http://notes.carlos-studio.com/ex_form_file.php" method="post" enctype="multipart/form-data">
+      <input type="text" name="the_text">
+      <br>
+      <input type="file" accept="image/*" name="the_file">
+      <br>
+      <button type="submit">資料送出</button>
+    </form>
+    <!--
+    http://notes.carlos-studio.com/ex_form_file.php
+    -->
+    <script>
+
+      var mycanvas = document.getElementById("mycanvas");
+      var ctx = mycanvas.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(100, 100);
+      ctx.stroke();
+
+      // var h1 = document.getElementsByTagName("h1")[0];
+      // h1.addEventListener("click", function(){
+      //   alert("點擊彈出視窗");
+      // });
+    </script>
+  </body>
+</html>

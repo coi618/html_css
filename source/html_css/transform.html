@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div.block{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+      }
+      div.block div.rotate{
+        border: 1px solid red;
+        width: 100%;
+        height: 100%;
+
+        transform: rotate(20deg);
+
+        /* 水平方向 垂直方向 */
+        transform-origin: 50% 50%;
+      }
+
+      div.block2{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-left: 150px;
+      }
+      div.block2 div.scale{
+        border: 1px solid blue;
+        width: 100%;
+        height: 100%;
+
+        transform: scale(1.3);
+        /* transform: scaleX(1.3); */
+        /* transform: scaleY(1.3); */
+
+        transform-origin: 50% 50%;
+      }
+
+      div.block3{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+
+        position: relative;
+      }
+      div.block3 div.translate{
+        border: 1px solid green;
+        width: 80px;
+        height: 80px;
+
+        /* transform: translate(5px, 10px); */
+        /* transform: translateX(5px); */
+        /* transform: translateY(10px); */
+
+        /* 綠框在黑框的水平方向、垂直方向，都置中 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      div.block4{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-left: 100px;
+      }
+      div.block4 div.skew{
+        border: 1px solid orange;
+        width: 100%;
+        height: 100%;
+
+        transform: skew(10deg, 0deg);
+        /* transform: skewX(10deg); */
+        /* transform: skewY(10deg); */
+
+        transform-origin: 50% 50%;
+
+      }
+
+      div.block5{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-left: 150px;
+      }
+      div.block5 div.inner{
+        border: 1px solid purple;
+        width: 100%;
+        height: 100%;
+
+        /* 縮放 + 旋轉 */
+        /* transform: scale(1.5); */
+        /* transform: rotate(20deg); */
+
+        transform: scale(1.5) rotate(20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>形變效果 transform</h1>
+
+    <div class="block">
+      <div class="rotate">元素旋轉</div>
+    </div>
+
+    <br>
+
+    <div class="block2">
+      <div class="scale">元素縮放</div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="block3">
+      <div class="translate">元素偏移</div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="block4">
+      <div class="skew">元素傾斜</div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="block5">
+      <div class="inner">內部元素</div>
+    </div>
+
+  </body>
+</html>

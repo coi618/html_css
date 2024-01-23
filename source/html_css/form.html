@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form action="http://notes.carlos-studio.com/ex_post.php" method="post">
+
+      <div>
+        <label>帳號：</label>
+        <input type="text" name="username">
+      </div>
+
+      <div>
+        <label>密碼：</label>
+        <input type="password" name="password">
+      </div>
+
+      <div>
+        <label>飲食：</label>
+        <input type="radio" name="food_type" id="option1" value="葷" checked>
+        <label for="option1">葷</label>
+        <input type="radio" name="food_type" id="option2" value="素">
+        <label for="option2">素</label>
+      </div>
+
+      <div>
+        <label>人數：</label>
+        <select name="num">
+          <option value="1">1位</option>
+          <option value="2">2位</option>
+          <option value="3">3位</option>
+        </select>
+      </div>
+
+      <div>
+        <label>興趣：</label>
+
+        <input type="checkbox" name="habits[]" id="sport" value="運動">
+        <label for="sport">運動</label>
+
+        <input type="checkbox" name="habits[]" id="travel" value="旅遊">
+        <label for="travel">旅遊</label>
+
+        <input type="checkbox" name="habits[]" id="movie" value="電影">
+        <label for="movie">電影</label>
+      </div>
+
+      <div>
+        <label>其它事項：</label><br>
+        <textarea name="notes"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">資料送出</button>
+      </div>
+    </form>
+
+    <!--
+      1、
+        form 標籤的
+            action 屬性，設定成 http://notes.carlos-studio.com/ex.php
+            method 屬性，設定成 get。
+      2、
+        帳號欄位 name="username"；
+        密碼欄位 name="password"；
+        飲食單選框(radio) name="food_type"，
+            「葷」 這個的 value 設定成「葷」；
+            「素」 這個的 value 設定成「素」。
+        人數下拉選單的欄位(select) name="num" 的下拉選單，
+        建立「1位」、「2位」、「3位」，
+            各自 option 的 value 為 1、2、3。
+        興趣欄位多選框(checkbox)： name="habits[]"，
+            value 分別是 運動、旅遊、電影。
+        其它事項多行文字框(textarea) name="notes"。
+        資料送出的按鈕，type 設定成 submit。
+
+      3、以上測試完之後，改掉 form 標籤的 action 與 method，改成如下：
+          action 屬性，設定成 http://notes.carlos-studio.com/ex_post.php
+          method 屬性，設定成 post。
+    -->
+  </body>
+</html>

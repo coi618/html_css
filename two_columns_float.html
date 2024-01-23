@@ -1,0 +1,68 @@
+<!-- Filename: two_columns_float.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>two_columns_float</title>
+    <style>
+       * {
+        box-sizing: border-box;
+       }
+
+       header.header, footer.footer {
+        border: 1px solid black;
+        width: 800px;
+        margin: 0 auto;
+       }
+
+       div.parent_block {
+        border: 1px solid red;
+        width: 800px;
+        margin: 20px auto;
+       }
+
+       div.parent_block::after {
+        content:"";
+/*        border: 1px solid purple ;*/
+        display: block;
+        clear: both;
+       }
+
+       div.parent_block aside.aside, div.parent_block main.main {
+        float: left;
+       }
+
+       div.parent_block aside.aside {
+        border: 1px solid blue;
+        width: 200px;
+        margin-right: 20px;
+       }
+
+       div.parent_block main.main {
+        border: 1px solid green ;
+        width: calc(100% - 200px - 20 px);
+       }
+    </style>
+  </head>
+  <body>
+    <header class="header">Hazy Skyscraper</header>
+    <div class="parent_block">
+      <aside class="aside">
+        Hazy Skyscraper<br>
+        DemonDice<br>
+        Track 5 on Kakigori Galaxy Astronaut
+      </aside>
+      <main class="main">
+        Traveling light's how it usually goes<br>
+        Mind open wide with heart open closed<br>
+        Start at the bottom, but time only knows<br>
+        Unravel the tale of the world that I chose<br>
+        Seek an answer in an infinite skyline, a promising refrain<br>
+        But the meaning tends to vanish when it's me, myself and I again<br>
+      </main>
+    </div>  
+
+    <footer class="footer">Mar. 2, 2019 34.5K Views</footer>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      div.block{
+        border: 10px solid hsla(240, 50%, 50%, .3);
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        background-image: url("./images/lion.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        background-origin: border-box;
+
+        /* border-box(預設) | padding-box | content-box */
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>背景圖的裁切區域 background-clip</h1>
+
+    <div class="block">
+      這是 div 區塊
+    </div>
+  </body>
+</html>

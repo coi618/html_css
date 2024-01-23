@@ -1,0 +1,22 @@
+@import "./all.css";
+
+h1{
+  color: red;
+}
+
+/* 這裡是註解 */
+
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table td, table th{
+  border: 1px solid black;
+}
+
+p{
+  color: red;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-left: 30px;
+}

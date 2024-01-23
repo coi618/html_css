@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      html{
+        /* font-size: 10px; */
+        font-size: 62.5%; /* 等同於 10px，即 16px 乘上 62.5%。 */
+      }
+      div.div1{
+        font-size: 24px;
+      }
+      div.div2{
+        font-size: 2.5rem;
+      }
+      div.div3{
+        font-size: 16px;
+      }
+      div.div3_inner{
+        font-size: 2em;
+      }
+
+      div.div4{
+        font-size: 16px;
+      }
+      div.div4_inner{
+        font-size: 200%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="div1">這是一般預設的文字大小 16px</div>
+
+    <div class="div2">這是相對於根元素的文字大小單位 rem</div>
+
+    <div class="div3">
+      這是 div3 的文字大小
+      <div class="div3_inner">相對於父元素的文字大小單位 em</div>
+    </div>
+
+    <div class="div4">
+      這是 div4 的文字大小
+      <div class="div4_inner">相對於父元素的文字大小單位 %</div>
+    </div>
+
+  </body>
+</html>

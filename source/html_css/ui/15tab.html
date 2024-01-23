@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-zhant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      div.tab_container{
+        /* border: 1px solid red; */
+      }
+
+      div.tab_container div.tab_list_block{
+        padding-left: 20px;
+      }
+      div.tab_container div.tab_list_block ul.tab_list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid black; */
+      }
+      div.tab_container div.tab_list_block ul.tab_list > li{
+        display: inline-block;
+      }
+      div.tab_container div.tab_list_block ul.tab_list > li > a{
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 16px;
+
+        color: #ccc;
+        border: 1px solid #ccc;
+        border-bottom: 0;
+        padding: 4px 20px;
+        border-radius: 10px 10px 0 0;
+      }
+      div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-bottom: 0;
+      }
+
+      div.tab_container div.tab_content{
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      div.tab_container div.tab_content div.tab{
+        padding: 10px;
+        display: none;
+      }
+      div.tab_container div.tab_content div.tab.-on{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>頁籤(Tab)</h1>
+
+    <!--
+      jQuery 官網： https://jquery.com
+    -->
+
+    <div class="tab_container">
+      <!-- 頁籤列表 -->
+      <div class="tab_list_block">
+        <ul class="tab_list">
+          <li><a href="#" data-target="tab1" class="tab -on">頁籤一</a></li>
+          <li><a href="#" data-target="tab2" class="tab">頁籤二</a></li>
+          <li><a href="#" data-target="tab3" class="tab">頁籤三</a></li>
+        </ul>
+      </div>
+
+      <!-- 頁籤內容 -->
+      <div class="tab_content">
+        <div class="tab tab1 -on">
+          頁籤一的內容<br>第二行
+        </div>
+        <div class="tab tab2">
+          頁籤二的內容
+        </div>
+        <div class="tab tab3">
+          頁籤三的內容
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 載入 jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("a.tab").on("click", function(e){
+        e.preventDefault();
+
+        $(this).closest("ul").find("a.tab").removeClass("-on");
+        $(this).addClass("-on");
+
+        // 內容切換
+        var el = $(this).closest("div.tab_container");
+        $(el).find("div.tab").removeClass("-on");
+        $(el).find("div.tab." + $(this).attr("data-target")).addClass("-on");
+      });
+    </script>
+  </body>
+</html>

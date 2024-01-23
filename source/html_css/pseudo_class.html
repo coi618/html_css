@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /* :root 等同於 html */
+      :root{
+        background-color: #ccc;
+      }
+
+      /* :hover */
+      p.para:hover{
+        color: blue;
+      }
+
+      /* :first-child、:last-child、:nth-child(n) */
+      /* ul.list > li:first-child{
+        color: red;
+      }
+      ul.list > li:last-child{
+        color: blue;
+      }
+      ul.list > li:nth-child(4){
+        color: green;
+      } */
+      ul.list > li:nth-child(2n){
+        color: blue;
+      }
+
+      /* :focus */
+      input.text_field:focus{
+        background-color: yellow;
+      }
+
+      /* :checked */
+      input.item:checked + label{
+        color: red;
+      }
+
+      /* :disabled */
+      input.text_field2:disabled{
+        background-color: gray;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>偽類別(Pseudo Class)</h1>
+
+    <p class="para">這是段落</p>
+
+    <ul class="list">
+      <li>第一項</li>
+      <li>第二項</li>
+      <li>第三項</li>
+      <li>第四項</li>
+      <li>第五項</li>
+    </ul>
+
+    <input type="text" class="text_field">
+
+    <div class="block">
+      <input type="checkbox" class="item">
+      <label>選項</label>
+    </div>
+
+    <input type="text" class="text_field2" disabled>
+  </body>
+</html>

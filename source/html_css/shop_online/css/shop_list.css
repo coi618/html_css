@@ -1,0 +1,152 @@
+/* banner */
+section.banner_bg{
+  /* border: 1px solid red; */
+  background-image: url("../images/banner_bg.png");
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: var(--bg-color);
+  min-width: var(--page-width);
+}
+
+/* 中間區域 */
+div.main_block{
+  /* border: 1px solid blue; */
+  min-height: calc(100vh - 60px - 200px - 82px);
+  font-size: 1.6rem;
+  min-width: var(--page-width);
+  background-color: var(--bg-color);
+  background-image: url("../images/main_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+div.main_block div.inner_block{
+  /* border: 1px solid red; */
+  width: var(--page-width);
+  margin: 0 auto;
+  font-size: 0;
+}
+
+/* 固定式二欄式 */
+div.main_block div.inner_block aside.aside, div.main_block div.inner_block main.main{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.6rem;
+
+  border: 1px solid gray;
+  padding: 20px;
+  background-color: hsla(0, 0%, 100%, .9);
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray inset;
+}
+div.main_block div.inner_block aside.aside{
+  /* border: 1px solid yellow; */
+  width: 200px;
+  margin-right: 20px;
+}
+div.main_block div.inner_block aside.aside button.btn_submit{
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+div.main_block div.inner_block aside.aside h1.title1{
+  font-size: 2rem;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 5px;
+}
+div.main_block div.inner_block aside.aside ul.type_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li{
+  margin-bottom: 10px;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li:last-child{
+  margin-bottom: 0;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li input.type{
+  cursor: pointer;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li label{
+  cursor: pointer;
+}
+div.main_block div.inner_block main.main{
+  border: 1px solid white;
+  width: calc(100% - 200px - 20px);
+}
+
+/* 商品區域 */
+div.main_block div.inner_block main.main ul.product_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.main_block div.inner_block main.main ul.product_list > li{
+  /* border: 1px solid black; */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: calc((100% - 60px) / 4);
+}
+div.main_block div.inner_block main.main ul.product_list > li:nth-child(4n){
+  margin-right: 0;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a{
+  /* border: 1px solid red; */
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  box-shadow: 0 0 5px gray;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: white;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > h1.title1{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid green; */
+  color: black;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.img_block{
+  /* border: 1px solid green; */
+  font-size: 0;
+  margin: 5px 0;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.img_block > img{
+  width: 100%;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block{
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block div.left_block{
+  /* border: 1px solid red; */
+  color: gray;
+  font-size: 1.4rem;
+  padding-left: 5px;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block div.left_block span.original_price{
+  text-decoration: line-through;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block div.right_block{
+  /* border: 1px solid blue; */
+  color: orange;
+  font-size: 1.8rem;
+  align-self: flex-end;
+  padding-right: 5px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      div.img_block{
+        border: 1px solid red;
+        width: 400px;
+      }
+      div.img_block img{
+        float: right;
+      }
+
+      div.img_block::after{
+        content: "";
+        /* border: 1px solid black; */
+        display: block;
+
+        clear: both; /* 左邊跟右邊不能有任何浮動元素，如果有，那麼該元素，就要一直往下掉，掉到沒有為止。 */
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img_block">
+      <img src="./images/apples.jpg">
+      測試文字測試文字測試文字測試文試文字
+
+
+    </div>
+  </body>
+</html>

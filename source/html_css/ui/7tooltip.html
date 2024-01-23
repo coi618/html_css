@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      button.btn{
+        font-size: 1rem;
+        cursor: pointer;
+
+        position: relative;
+      }
+      button.btn span.tooltip{
+        display: inline-block;
+        background-color: black;
+        color: white;
+
+        white-space: nowrap;
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+
+        padding: 5px 10px;
+        font-size: .8rem;
+        border-radius: 5px;
+
+        display: none;
+      }
+      button.btn span.tooltip::before{
+        content: "";
+        display: inline-block;
+        border-top: 0px solid red;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid black;
+        border-left: 8px solid transparent;
+
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        transform: translateX(-50%);
+      }
+      button.btn:hover span.tooltip{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>實作 Tooltip 介面</h1>
+
+    <button type="button" class="btn">這是按鈕文字<span class="tooltip">這是提示文字</span></button>
+  </body>
+</html>

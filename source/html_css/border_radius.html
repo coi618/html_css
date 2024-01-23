@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /*
+      https://alldata.sgp1.digitaloceanspaces.com/images/lion_square.png
+      */
+      div.block1{
+        border: 1px solid red;
+        background-color: lightblue;
+        width: 200px;
+        height: 100px;
+
+        /* 四個角落 */
+        /* border-radius: 10px; */
+
+        /* 左上和右下、右上和左下 */
+        /* border-radius: 10px 20px; */
+
+        /* 左上、右上和左下、右下 */
+        /* border-radius: 10px 20px 30px; */
+
+        /* 左上、右上、右下、左下*/
+        border-radius: 10px 20px 30px 40px;
+      }
+
+      div.block2{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      div.block2 img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>圓角 border-radius</h1>
+    <div class="block1">
+      這是 block1 區塊
+    </div>
+
+    <br>
+
+    <div class="block2">
+      <img src="./images/lion_square.png">
+    </div>
+  </body>
+</html>

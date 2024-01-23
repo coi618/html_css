@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div.block{
+        border: 1px solid black;
+
+        /* display: flex; */
+
+        display: inline-flex;
+      }
+      span{
+        border: 1px solid red;
+      }
+
+      ul.list{
+        border: 1px solid black;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+
+        /* display: inline-flex; */
+        height: 100px;
+      }
+      ul.list > li{
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox 排版模式</h1>
+    <div class="block">
+      這是 block 區塊
+    </div>
+    <span>這是 span 標籤，預設的 display 是 inline</span>
+
+    <br>
+    <br>
+
+    <ul class="list">
+      <li>第一項</li>
+      <li>第二項</li>
+      <li>第三項</li>
+    </ul>
+
+  </body>
+</html>

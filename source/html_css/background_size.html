@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div.block{
+        border: 1px solid red;
+        width: 300px;
+        height: 300px;
+        background-image: url("./images/lion.jpg");
+        background-repeat: no-repeat;
+        /* background-size: 80%; */
+        /* background-size: 100% 50%; */
+        /* background-size: 100px; */
+
+        /* 背景圖的寬或高其中一個會是 100%，
+           目的要能讓背景圖在元素內完整出現 */
+        /* background-size: contain; */
+
+        /*背景圖的寬或高其中一個會是 100%,
+          目的要能讓背景圖佔滿整個元素。*/
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>背景圖大小 background-size</h1>
+    <div class="block">
+      這是 div 區塊
+    </div>
+  </body>
+</html>

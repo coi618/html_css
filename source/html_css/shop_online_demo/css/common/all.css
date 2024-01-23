@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  --page-width: 1200px;
+  --bg-color: #046f15;
+}
+body{
+  margin: 0;
+}

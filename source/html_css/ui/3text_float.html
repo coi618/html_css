@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      article.card{
+        border: 1px solid black;
+        width: 400px;
+        padding: 10px;
+      }
+      article.card::after{
+        content: "";
+        /* border: 1px solid red; */
+        display: block;
+        clear: both;
+      }
+      article.card a.img_block{
+        border: 1px solid #ccc;
+        display: block;
+        width: 180px;
+        float: left;
+        text-decoration: none;
+        font-size: 0;
+        margin-right: 10px;
+      }
+      article.card a.img_block span.img_text{
+        font-size: .8rem;
+        color: #999;
+        display: inline-block;
+        /* border: 1px solid gray; */
+        margin-top: 5px;
+      }
+      article.card a.img_block img{
+        width: 100%;
+      }
+
+      article.card div.content_block{
+        /* border: 1px solid green; */
+      }
+      article.card div.content_block h1{
+        margin: 0 0 5px 0;
+        font-size: 1.2rem;
+      }
+      article.card div.content_block p{
+        margin: 0;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>文繞圖</h1>
+    <!--
+    https://picsum.photos/id/729/500/300
+    -->
+
+    <article class="card">
+      <a href="https://tw.yahoo.com" target="_blank" class="img_block">
+        <img src="https://picsum.photos/id/729/500/300">
+        <span class="img_text">圖片簡述圖片簡述圖片簡述圖片簡述圖片簡述圖片簡述</span>
+      </a>
+      <div class="content_block">
+        <h1>農夫耕種的照片</h1>
+        <p>
+          <!-- 這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機 -->
+
+          這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字
+          這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字這是隨機的文字
+
+        </p>
+      </div>
+    </article>
+
+  </body>
+</html>

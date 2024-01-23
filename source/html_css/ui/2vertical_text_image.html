@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      article.card{
+        border: 1px solid rgba(0, 0, 0, .125);
+        width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      article.card a.img_block{
+        /* border: 1px solid red; */
+        display: block;
+        font-size: 0;
+      }
+      article.card a.img_block > img{
+        /*vertical-align: bottom;*/ /* baseline 是預設 */
+        width: 100%;
+      }
+      article.card div.content_block{
+        /* border: 1px solid blue; */
+        padding: 10px;
+      }
+      article.card div.content_block h1{
+        /* border: 1px solid black; */
+        margin: 0 0 5px 0;
+        font-size: 1.2rem;
+      }
+      article.card div.content_block p{
+        margin: 0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>直向圖文編排</h1>
+    <!--
+    https://picsum.photos/id/729/500/300
+    -->
+
+    <article class="card">
+
+      <a href="https://tw.yahoo.com" target="_blank" class="img_block"><img src="https://picsum.photos/id/729/500/300"></a>
+
+      <div class="content_block">
+        <h1>農夫耕種的照片</h1>
+        <p>這是隨機的文字，這是隨機的文字，這是隨機的文字，這是隨機的文字，這是隨機的文字，這是隨機的文字，這是隨機的文字，這是隨機的文字。</p>
+      </div>
+
+    </article>
+
+  </body>
+</html>

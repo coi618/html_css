@@ -1,0 +1,31 @@
+<!-- Filename: float.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Float.html</title>
+    <style>
+      div.img_block {
+        border: 1px solid red;
+        width: 450px;
+      }
+      div.img_block img{
+        float: left;
+      }
+      div.img_block::after {
+        /*border: 1px solid black;
+        content: "a";*/
+        /* Solution of parentElement not wide enough to hold the float element       */
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img_block">
+      <img src="./images/apples.jpg">
+      Traveling light's how it usually goes. Mind open wide with heart open closed. Start ar the bottom, <!--but time only knowns. Unravel the tale of the world that I chose. Seek an answer in an infinite skyline, a promising refrain. But the meaning tends to vanish when it's me, myself and I again. I don't complain about it, I just don't have the time, half the time, wondering weather the weather will give me some sunshine.-->
+    </div>  
+  </body>
+</html>

@@ -1,0 +1,149 @@
+/* banner */
+section.banner_bg{
+  height: 200px;
+  background-color: var(--bg-color);
+  background-image: url("../images/banner_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-width: var(--page-width);
+}
+
+/* 中間區域 */
+div.main_block{
+  min-height: calc(100vh - 60px - 200px - 60px);
+  /* border: 1px solid black; */
+  background-color: var(--bg-color);
+  font-size: 1.6rem;
+  min-width: var(--page-width);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-image: url("../images/main_bg.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: contain;
+}
+
+div.main_block div.inner_block{
+  /* border: 1px solid red; */
+  width: var(--page-width);
+  margin: 0 auto;
+  font-size: 0;
+}
+div.main_block div.inner_block aside.aside, div.main_block div.inner_block main.main{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.6rem;
+
+  border: 1px solid gray;
+  padding: 20px;
+  background-color: hsla(0, 0%, 100%, .9);
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray inset;
+}
+div.main_block div.inner_block aside.aside{
+  width: 200px;
+  margin-right: 20px;
+}
+div.main_block div.inner_block aside.aside button.btn_submit{
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+div.main_block div.inner_block aside.aside h1.title1{
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+}
+div.main_block div.inner_block aside.aside ul.type_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li{
+  margin-bottom: 10px;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li:last-child{
+  margin-bottom: 0;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li input.type{
+  cursor: pointer;
+}
+div.main_block div.inner_block aside.aside ul.type_list > li label{
+  cursor: pointer;
+}
+div.main_block div.inner_block main.main{
+  /* border: 1px solid green; */
+  width: calc(100% - 200px - 20px);
+}
+
+div.main_block div.inner_block main.main ul.product_list{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+div.main_block div.inner_block main.main ul.product_list > li{
+  /* border: 1px solid black; */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: calc((100% - 60px) / 4);
+}
+div.main_block div.inner_block main.main ul.product_list > li:nth-child(4n){
+  margin-right: 0;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a{
+  display: block;
+  /* border: px groove gray; */
+  text-decoration: none;
+  width: 100%;
+  box-shadow: 0 0 5px gray;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: white;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > h1.title1{
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.img_block{
+  /* border: 1px solid green; */
+  font-size: 0;
+  margin: 5px 0;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.img_block > img{
+  width: 100%;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block{
+  /* border: 1px solid blue; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block div.left_block{
+  /* border: 1px solid red; */
+  color: gray;
+  font-size: 1.4rem;
+  padding-left: 5px;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block div.left_block span.original_price{
+  text-decoration: line-through;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block div.right_block{
+  /* border: 1px solid red; */
+  color: orange;
+  font-size: 1.8rem;
+  align-self: flex-end;
+  padding-right: 5px;
+}
+div.main_block div.inner_block main.main ul.product_list > li > a > div.price_block div.right_block span.sell_price{
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div.block1{
+        border: 1px solid red;
+        width: 300px;
+        height: 300px;
+        /* top | bottom | left | right */
+        /* background-image: linear-gradient(to top right, red, green); */
+
+        /* background-image: linear-gradient(180deg, red, green, yellow); */
+
+        background-image: linear-gradient(to bottom, red 30px, green 100px, yellow 250px);
+      }
+
+      div.block2{
+        border: 1px solid blue;
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        background-image: linear-gradient(135deg, red 50%, hsla(0, 0%, 0%, .5) 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>背景線性漸層 linear-gradient</h1>
+    <div class="block1">
+      這是 block1 區塊
+    </div>
+
+    <br>
+
+    <div class="block2">
+      這是 block2 區塊
+    </div>
+  </body>
+</html>

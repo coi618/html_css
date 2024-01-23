@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      div.normal_checkbox label, div.custom_checkbox label{
+        /* border: 1px solid red; */
+        cursor: pointer;
+      }
+
+      div.custom_checkbox input[type="checkbox"]{
+        display: none;
+      }
+      div.custom_checkbox input[type="checkbox"] + label::before{
+        content: "";
+        display: inline-block;
+        /* border: 1px solid green; */
+        width: 14px;
+        height: 14px;
+
+        background-image: url("https://alldata.sgp1.digitaloceanspaces.com/images/unchecked-checkbox-50.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+      }
+      div.custom_checkbox input[type="checkbox"]:checked + label::before{
+        background-image: url("https://alldata.sgp1.digitaloceanspaces.com/images/checked-checkbox-50.png");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>自訂核取方塊</h1>
+
+    <!--
+    未勾選狀態的圖片網址：
+    https://alldata.sgp1.digitaloceanspaces.com/images/unchecked-checkbox-50.png
+
+    已勾選狀態的圖片網址：
+    https://alldata.sgp1.digitaloceanspaces.com/images/checked-checkbox-50.png
+    -->
+
+    <div class="normal_checkbox">
+      <input type="checkbox" id="original_checkbox">
+      <label for="original_checkbox">預設的 checkbox</label>
+    </div>
+
+    <div class="custom_checkbox">
+      <input type="checkbox" id="custom_checkbox">
+      <label for="custom_checkbox">換圖的 checkbox</label>
+    </div>
+
+  </body>
+</html>

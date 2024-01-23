@@ -1,0 +1,64 @@
+<!-- Filename: position.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<title>Position</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			div.div1{border:1px solid black;}
+			div.div2{border:1px solid red;
+				position: fixed;
+				/* top | right | buttom | left */
+				bottom: 20px;
+				right: 20px;
+			}
+			div.div3{border:1px solid blue;
+				position: relative;
+        height: 100px;
+        /* top | right | bottom | left */
+        /*top:-20px;
+        bottom:-20px;*/
+			}
+      div.div3_inner {
+        border:1px solid red;
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+      }
+			div.div4{border:1px solid green;
+        /*position: sticky;
+        top: 0;
+        height: 300px;*/
+      }
+      div.div4_inner {
+        border: 1px solid red;
+        position: sticky;
+        top: 0;
+        height: 100px;
+      }
+			div.div5{border:1px solid orange;
+				height: 2000px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Position Attribute</h1>
+		<div class="div1">This is div 1</div>	
+		<div class="div2">This is div 2</div>	
+		<div class="div3">
+      This is div 3
+      <div class="div3_inner">This is div3_inner</div>
+      Other content in div3
+    </div>	
+		<div class="div4">
+      This is div 4
+      <div class="div4_inner">This is div4_inner</div> 
+      Other content in div4
+    </div>	
+		<div class="div5">This is div 5</div>	
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div.block{
+        /* border: 1px solid red; */
+        border: 10px solid hsla(240, 50%, 50%, .3);
+        width: 300px;
+        height: 300px;
+
+        padding: 10px;
+
+        background-image: url("./images/lion.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        /* padding-box(預設) | border-box | content-box */
+        background-origin: content-box;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>背景圖的顯示區域 background-origin</h1>
+    <div class="block">
+      這是 div 區塊
+    </div>
+  </body>
+</html>

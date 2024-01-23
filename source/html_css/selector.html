@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      p{
+        color: red;
+      }
+      a[target]{
+        color: red;
+      }
+      a[href^="https"]{
+        font-size: 30px;
+      }
+      p[name$="test"]{
+        color: blue;
+      }
+      div[name="div2"]{
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p>這是段落</p>
+    <a href="http://tw.yahoo.com">yahoo 連結1</a>
+    <a href="https://tw.yahoo.com" target="_blank">yahoo 連結2</a>
+
+    <p name="myname_test">這是段落一</p>
+    <p name="myname">這是段落二</p>
+
+    <div name="div1">這是 div1</div>
+    <div name="div2">這是 div2</div>
+  </body>
+</html>

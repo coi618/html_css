@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div.block{
+        border: 1px solid red;
+        background-color: lightblue;
+        width: 100px;
+        height: 100px;
+
+        /* 寫法一：水平位移 垂直位移 顏色 */
+        /* box-shadow: 5px 5px black; */
+
+        /* 寫法二：水平位移 垂直位移 模糊 顏色 */
+        /* box-shadow: 5px 5px 10px black; */
+
+        /* 寫法三：水平位移 垂直位移 模糊 擴散 顏色 */
+        /* box-shadow: 5px 5px 10px 5px black; */
+
+        /* 寫法四：水平位移 垂直位移 模糊 擴散 顏色 inset */
+        /* box-shadow: 5px 5px 5px 0px black inset; */
+
+        /* 多個陰影 */
+        box-shadow: 5px 5px black, -5px -5px red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>box-shadow 區塊陰影</h1>
+    <div class="block">
+      區塊陰影
+    </div>
+  </body>
+</html>

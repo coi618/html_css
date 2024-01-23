@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div.block1{
+        border: 1px solid black;
+
+        outline: 1px solid red;
+        outline-offset: 5px;
+      }
+      input.my_text{
+        /* outline: none; */
+      }
+      input.my_text:focus{
+        outline: 2px dashed blue;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>元素的輪廓 outline</h1>
+    <div class="block1">這是文字1</div>
+    <div class="block2">這是文字2</div>
+
+    <input type="text" class="my_text">
+  </body>
+</html>

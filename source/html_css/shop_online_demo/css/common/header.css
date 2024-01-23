@@ -1,0 +1,142 @@
+header.header{
+  /* border: 1px solid black; */
+  width: 100%;
+  background: linear-gradient(to bottom, #efefef, lightgray);
+  /* background-color: var(--bg-color); */
+  min-width: var(--page-width);
+  box-shadow: 0 1px 5px black;
+  position: sticky;
+  top: 0;
+}
+
+header.header div.block{
+  /* border: 1px solid blue; */
+  width: var(--page-width);
+  margin: 0 auto;
+  border-left: 1px dotted #bbb;
+  border-right: 1px dotted #bbb;
+}
+header.header div.block nav.nav::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+header.header div.block nav.nav a.logo{
+  /* border: 1px solid red; */
+  display: inline-block;
+  vertical-align: top;
+}
+header.header div.block nav.nav a.logo img{
+  height: 60px;
+  vertical-align: bottom;
+}
+
+header.header div.block nav.nav ul.nav_list{
+  list-style: none;
+  margin: 0 0 0 30px;
+  padding: 0;
+  display: inline-block;
+  /* border: 1px solid red; */
+  vertical-align: top;
+}
+header.header div.block nav.nav ul.nav_list > li{
+  display: inline-block;
+  /* border: 1px solid blue; */
+}
+header.header div.block nav.nav ul.nav_list > li > a{
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 17px 20px 18px;
+  /* border: 1px solid green; */
+  color: gray;
+}
+header.header div.block nav.nav ul.nav_list > li > a.-on, header.header div.block nav.nav ul.nav_list > li > a:hover{
+  background: linear-gradient(to bottom, #efefef 2%, gray 98%);
+  box-shadow: 0 -2px 2px 0 gray inset;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+header.header div.block nav.nav div.share_block{
+  /* border: 1px solid red; */
+  float: right;
+  font-size: 1.8rem;
+  position: relative;
+}
+header.header div.block nav.nav div.share_block:hover ul.share_list{
+  display: block;
+}
+header.header div.block nav.nav div.share_block span.share_text{
+  display: block;
+  padding: 17px 20px 18px;
+  cursor: default;
+  color: gray;
+}
+header.header div.block nav.nav div.share_block span.share_text:hover{
+  /* background-color: green; */
+  color: white;
+  background: linear-gradient(to bottom, white 2%, gray 98%);
+  box-shadow: 0 -2px 2px 0 gray inset;
+  text-shadow: 1px 1px 1px black;
+}
+header.header div.block nav.nav div.share_block span.share_text:hover::after{
+  border-top: 5px solid white;
+}
+header.header div.block nav.nav div.share_block span.share_text::after{
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid gray;
+  border-bottom: 0px solid red;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
+
+header.header div.block nav.nav div.share_block ul.share_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: gray;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li{
+  position: relative;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90%;
+  border-top: 1px dashed white;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+header.header div.block nav.nav div.share_block ul.share_list > li:last-child::after{
+  border-top: 0;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li > a{
+  text-decoration: none;
+  display: inline-block;
+  color: lightgray;
+  /* border: 1px solid green; */
+  width: 100%;
+  padding: 8px 10px;
+  text-align: center;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li > a:hover{
+  /* color: white; */
+  /* box-shadow: 0 -2px 2px 0 gray inset; */
+  /* text-shadow: 1px 1px 1px black; */
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}

@@ -1,0 +1,46 @@
+<!-- Filename: vertical_align.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<title>Vertical Align</title>
+		<style>
+			img{
+				width: 200px;
+			}
+			div.block {
+				border: 1px solid red;
+			}
+			ul.list {
+				border: 1px solid black;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			ul.list > li {
+				border: 1px solid blue;
+				display: inline-block;
+				vertical-align: bottom; /* top | middle | bottom */
+			}
+			ul.list > li.first {
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>vertical-align 屬性</h1>
+
+		<div class="block">
+			<img src="https://alldata.sgp1.digitaloceanspaces.com/images/lion.jpg">
+			xyz
+		</div>
+
+		<ul class="list">
+			<li class="first">第一項<br>Second text xyz</li>
+			<li>2nd item</li>
+			<li>3rd item</li>
+		</ul>
+
+	</body>
+</html>

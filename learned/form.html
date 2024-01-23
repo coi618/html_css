@@ -1,0 +1,60 @@
+<!-- Filename: form.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<title>amazing!! is This</title>
+	</head>
+	<body>
+		<form action="http://notes.carlos-studio.com/ex.php" method="post">
+			<div>
+				<label>帳號</label>
+				<input type="text" name="username">
+			</div>
+			<div>
+				<label>密碼</label>
+				<input type="password" name="password">
+			</div>
+
+			<div>
+				<label>飲食：</label>
+				<input type="radio" name="food_type" value="葷" id="option1">
+				<label for="option1">葷</label>
+				<input type="radio" name="food_type" value="素" id="option2">
+				<label for="option2">素</label>
+			</div>
+
+			<div>
+				<label>人數：</label>
+				<select name="num">
+					<option value="1">1位</option>
+					<option value="2">2位</option>
+					<option value="3">3位</option>
+				</select>
+			</div>
+
+			<div>
+				<label>興趣</label>
+
+				<input type="checkbox" name="habits[]" id="sport" value="運動">
+				<label for="sport">運動</label>
+				<input type="checkbox" name="habits[]" id="travel" value="旅遊">
+				<label for="travel">旅遊</label>
+				<input type="checkbox" name="habits[]" id="movie" value="電影">
+				<label for="movie">電影</label>
+			</div>
+
+			<div>
+				<label>其他事項：</label><br>
+				<textarea name="notes"></textarea>
+			</div>
+
+			<div>
+				<button type="submit">資料送出</button>
+			</div>
+		</form>	
+	</body>
+</html>
+
+<!-- http://notes.carlos-studio.com/ex.php?username=12&password=wqr&food_type=素&num=1&habits%5B%5D=旅遊&notes=awe -->

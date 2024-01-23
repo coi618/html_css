@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      label.popover_label{
+        /* border: 1px solid red; */
+        display: inline-block;
+        position: relative;
+      }
+      label.popover_label input{
+        font-size: 1rem;
+        padding: 5px 10px;
+        outline: none;
+      }
+      label.popover_label span.popover{
+        display: none;
+        border: 1px solid hsla(0, 0%, 0%, .3);
+        position: absolute;
+        left: 0;
+        top: 34px;
+        background-color: #fed;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      label.popover_label input:focus + span.popover{
+        display: block;
+      }
+      label.popover_label span.popover::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: -6px;
+        border: 1px solid hsla(0, 0%, 0%, .3);
+        border-right: 0;
+        border-bottom: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #fed;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Popover 介面</h1>
+
+    <label class="popover_label">
+      <input type="text" placeholder="輸入帳號">
+      <span class="popover">
+        僅能輸入英文字母、數字、底線(_)。
+      </span>
+    </label>
+  </body>
+</html>

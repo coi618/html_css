@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      p.para{
+        border: 1px solid red;
+        width: 100px;
+
+
+        /* manual(預設) | auto */
+        /* hyphens: auto; */
+
+        /* normal(預設) | break-word | break-all */
+        /* word-break: break-word; */
+      }
+      p.-type1{
+        word-break: break-word;
+        hyphens: auto;
+      }
+      p.-type2{
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>英文字斷行(word-break)及連字符號(hyphens)</h1>
+
+    <p class="para -type1">An extra ordinarily long English word! An extra ordinarily long English word! An extra ordinarily long English word!</p>
+
+    <p class="para -type2">http://tw.yahooagoogle.com</p>
+  </body>
+</html>

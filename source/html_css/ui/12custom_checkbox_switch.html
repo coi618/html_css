@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      div.parent_block{
+        /* border: 1px solid red; */
+        display: inline-block;
+      }
+      div.parent_block label{
+        cursor: pointer;
+        display: inline-block;
+      }
+      div.parent_block input[type="checkbox"]{
+        display: none;
+      }
+      div.parent_block input[type="checkbox"] + label{
+        font-size: 1rem;
+        background-image: linear-gradient(to bottom, #ddd, #bbb);
+        text-align: center;
+        padding: 5px 8px;
+        border-radius: 5px;
+        border: 1px solid hsla(0, 0%, 0%, .2);
+        text-shadow: 0 1px 1px white;
+        box-shadow: 0 1px 0 white inset;
+      }
+      div.parent_block input[type="checkbox"]:checked + label{
+        box-shadow: 1px 2px 3px hsla(0, 0%, 0%, .6) inset;
+        border: 1px solid hsla(0, 0%, 0%, .3);
+        text-shadow: 0 1px 0px #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>雙態開關</h1>
+
+    <div class="parent_block">
+      <input type="checkbox" id="custom_checkbox">
+      <label for="custom_checkbox">雙態開關按鈕</label>
+    </div>
+
+  </body>
+</html>

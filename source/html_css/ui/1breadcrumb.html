@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div.breadcrumb{
+        /* border: 1px solid black; */
+        background-color: #e9ecef;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+      div.breadcrumb ol.breadcrumb_list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid red; */
+      }
+      div.breadcrumb ol.breadcrumb_list > li{
+        /* border: 1px solid blue; */
+        display: inline-block;
+        margin-right: 10px;
+        color: gray;
+      }
+      div.breadcrumb ol.breadcrumb_list > li::before{
+        content: "/";
+        color: #aaa;
+        margin-right: 12px;
+        /* border: 1px solid gray; */
+        font-size: 18px;
+      }
+      div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+        content: "";
+        margin-right: 0;
+      }
+      div.breadcrumb ol.breadcrumb_list > li > a{
+        text-decoration: none;
+        /* border: 1px solid green; */
+        display: inline-block;
+        color: #007bff;
+      }
+      div.breadcrumb ol.breadcrumb_list > li > a:hover{
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>麵包屑(Breadcrumb)介面</h1>
+
+    <div class="breadcrumb">
+      <ol class="breadcrumb_list">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">分類頁</a></li>
+        <li>產品頁面</li>
+      </ol>
+    </div>
+  </body>
+</html>

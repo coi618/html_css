@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      nav.nav{
+        border: 1px solid black;
+      }
+      nav.nav ul.list{
+        /* border: 1px solid red; */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav.nav ul.list > li{
+        display: inline-block;
+        /* border: 1px solid orange; */
+        vertical-align: top;
+      }
+      nav.nav ul.list > li > a{
+        display: inline-block;
+        border: 1px solid green;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+      nav.nav ul.list > li > a:hover{
+        background-color: black;
+        color: white;
+      }
+      nav.nav ul.list > li > div.social_block{
+        border: 1px solid green;
+        padding: 5px 10px;
+        position: relative;
+      }
+      nav.nav ul.list > li > div.social_block:hover ul.social_list{
+        display: block;
+      }
+      nav.nav ul.list > li > div.social_block > ul.social_list{
+        /* border: 1px solid red; */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 32px;
+        right: 0;
+        width: 100%;
+        display: none;
+      }
+      nav.nav ul.list > li > div.social_block > ul.social_list > li{
+        /* border: 1px solid blue; */
+      }
+      nav.nav ul.list > li > div.social_block > ul.social_list > li > a{
+        text-decoration: none;
+        border: 1px solid orange;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      nav.nav ul.list > li > div.social_block > ul.social_list > li > a:hover{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>基本導覽列</h1>
+
+    <nav class="nav">
+      <ul class="list">
+
+        <li>
+          <a href="#">商品頁</a>
+        </li>
+
+        <li>
+          <a href="#">聯絡我們</a>
+        </li>
+
+        <li>
+          <div class="social_block">
+            社群連結
+            <ul class="social_list">
+              <li>
+                <a href="#">FB</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+
+    </nav>
+  </body>
+</html>

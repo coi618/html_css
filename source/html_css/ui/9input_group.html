@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div.input_group{
+        /* border: 1px solid black; */
+        font-size: 0;
+      }
+      div.input_group label{
+        border: 1px solid #ced4da;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        background-color: #e9ecef;
+        padding: 6px 10px;
+        width: 38px;
+        text-align: center;
+        border-radius: 5px 0 0 5px;
+      }
+      div.input_group input{
+        border: 1px solid #ced4da;
+        border-left: 0;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        padding: 8px 10px;
+        outline: none;
+        border-radius: 0 5px 5px 0;
+        width: calc(100% - 38px);
+
+        margin: 0;
+      }
+      div.input_group input:focus{
+        background-color: hsla(200, 80%, 90%, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>表單欄位群組化(Input Group)</h1>
+
+    <div class="input_group">
+      <label>@</label>
+      <input type="text" placeholder="輸入 Email">
+    </div>
+
+  </body>
+</html>

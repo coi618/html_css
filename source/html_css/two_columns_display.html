@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header.header, footer.footer{
+        border: 1px solid black;
+        width: 600px;
+        margin: 0 auto;
+      }
+      div.parent_block{
+        border: 1px solid red;
+        width: 600px;
+        margin: 20px auto;
+        font-size: 0;
+      }
+
+      div.parent_block aside.aside, div.parent_block main.main{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+      }
+
+      div.parent_block aside.aside{
+        border: 1px solid blue;
+        width: 200px;
+        margin-right: 20px;
+      }
+      div.parent_block main.main{
+        border: 1px solid green;
+        /* width: 100%; */
+        width: calc(100% - 200px - 20px);
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="header">
+      這是 header
+    </header>
+
+    <div class="parent_block">
+
+      <aside class="aside">
+        這是 aside<br>
+        這是 aside<br>
+        這是 aside<br>
+        這是 aside<br>
+        這是 aside<br>
+      </aside>
+      <main class="main">
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+        這是主內容<br>
+      </main>
+    </div>
+
+    <footer class="footer">
+      這是 footer
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,145 @@
+header.header{
+  font-size: 1.6rem;
+  /* border: 1px solid red; */
+  width: 100%;
+  min-width: var(--page-width); /* 600px */
+  background: linear-gradient(to bottom, #efefef, lightgray);
+}
+header.header div.block{
+  /* border: 1px solid blue; */
+  border-left: 1px dotted #bbb;
+  border-right: 1px dotted #bbb;
+  width: var(--page-width);
+  margin: 0 auto;
+}
+
+header.header div.block nav.nav{
+  /* border: 1px solid black; */
+  font-size: 0;
+}
+header.header div.block nav.nav::after{
+  content: "";
+  display: block;
+  /* font-size: 16px; */
+  /* border: 1px solid blue; */
+  clear: both;
+}
+header.header div.block nav.nav > a.logo{
+  /* border: 1px solid green; */
+  display: inline-block;
+  vertical-align: top;
+}
+header.header div.block nav.nav > a.logo img{
+  height: 60px;
+}
+
+header.header div.block nav.nav ul.nav_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  /* border: 1px solid red; */
+}
+header.header div.block nav.nav ul.nav_list > li{
+  /* border: 1px solid black; */
+  display: inline-block;
+  vertical-align: top;
+}
+header.header div.block nav.nav ul.nav_list > li > a{
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding: 17px 20px 18px;
+  color: gray;
+}
+header.header div.block nav.nav ul.nav_list > li > a.-on, header.header div.block nav.nav ul.nav_list > li > a:hover{
+  color: white;
+  background: linear-gradient(to bottom, #efefef 2%, gray 98%);
+  box-shadow: 0 -2px 2px gray;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* 導覽列的右側 */
+header.header div.block nav.nav div.share_block{
+  font-size: 1.8rem;
+  float: right;
+  /* border: 1px solid green; */
+  position: relative;
+}
+header.header div.block nav.nav div.share_block:hover ul.share_list{
+  display: block;
+}
+header.header div.block nav.nav div.share_block span.share_text{
+  color: gray;
+  padding: 17px 20px 18px;
+  display: inline-block;
+  /* border: 1px solid red; */
+  cursor: default;
+}
+header.header div.block nav.nav div.share_block span.share_text::after{
+  content: "";
+  display: inline-block;
+  border-top: 5px solid gray;
+  border-right: 5px solid transparent;
+  border-bottom: 0px solid green;
+  border-left: 5px solid transparent;
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
+header.header div.block nav.nav div.share_block span.share_text:hover::after{
+  border-top: 5px solid white;
+}
+header.header div.block nav.nav div.share_block span.share_text:hover{
+  color: white;
+  background: linear-gradient(to bottom, #efefef 2%, gray 98%);
+  box-shadow: 0 -2px 2px gray;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* 次選單 */
+header.header div.block nav.nav div.share_block ul.share_list{
+  position: absolute;
+  /* border: 1px solid black; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  background-color: gray;
+
+  display: none;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li{
+  /* border: 1px solid blue; */
+  position: relative;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-top: 1px dashed white;
+  width: 90%;
+  transform: translateX(-50%);
+}
+header.header div.block nav.nav div.share_block ul.share_list > li:last-child::after{
+  display: none;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li > a{
+  /* border: 1px solid red; */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 8px 10px;
+  color: lightgray;
+}
+header.header div.block nav.nav div.share_block ul.share_list > li > a:hover{
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}

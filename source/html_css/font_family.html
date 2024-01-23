@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      @font-face{
+        font-family: "myname";
+        /* src: url("./fonts/NotoSerifTC-Light.otf"); */
+
+        src: url("https://alldata.sgp1.digitaloceanspaces.com/fonts/NotoSerifTC/NotoSerifTC-Light.otf");
+        font-display: swap;
+      }
+      @font-face{
+        font-family: "myname-bold";
+        /* src: url("./fonts/NotoSerifTC-Black.otf"); */
+
+        src: url("https://alldata.sgp1.digitaloceanspaces.com/fonts/NotoSerifTC/NotoSerifTC-Black.otf");
+        font-display: swap;
+      }
+
+      /* 全站 */
+      body{
+        /* font-family: "helvetica", "標楷體"; */
+      }
+
+      /* 個別元素指定，也認識襯線、無襯線 */
+      p.para1{
+        /* 襯線 */
+        font-family: serif;
+      }
+      p.para2{
+        /* 無襯線 */
+        font-family: sans-serif;
+      }
+
+      /*
+
+      */
+      p.para3{
+        font-family: 'Lato', sans-serif;
+      }
+
+      p.para4{
+        font-family: "myname";
+      }
+      p.para5{
+        font-family: "myname-bold";
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>指定字體 font-family</h1>
+
+    <p class="para1">這是襯線字體</p>
+    <p class="para2">這是無襯線字體</p>
+    <p class="para3">This is english text.</p>
+
+    <p class="para4">使用自行下載的字體</p>
+    <p class="para5">使用自行下載的字體</p>
+
+  </body>
+</html>

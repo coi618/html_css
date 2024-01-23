@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div.div1{
+        border: 1px solid black;
+      }
+      div.div2{
+        border: 1px solid red;
+        position: fixed; /* static(預設值) */
+        /* top | right | bottom | left */
+        right: 0;
+        bottom: 0;
+      }
+      div.div3{
+        border: 1px solid blue;
+        position: relative;
+        height: 100px;
+        /* top | right | bottom | left */
+        left: 0px;
+        /* top: -20px; */
+        bottom: 0px;
+      }
+      div.div3_inner{
+        border: 1px solid red;
+        position: absolute;
+        /* top | right | bottom | left */
+        left: 10px;
+        bottom: 20px;
+      }
+      div.div4{
+        border: 1px solid green;
+        /* position: sticky;
+        top: 0; */
+        height: 300px;
+      }
+      div.div4_inner{
+        border: 1px solid red;
+        position: sticky;
+        top: 10px;
+        height: 100px;
+      }
+      div.div5{
+        border: 1px solid orange;
+        height: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>position 屬性</h1>
+    <div class="div1">這是 div1</div>
+    <div class="div2">這是 div2</div>
+    <div class="div3">
+      這是 div3
+      <div class="div3_inner">這是 div3 inner 的內容</div>
+      其它內容
+    </div>
+    <div class="div4">
+      這是 div4
+      <div class="div4_inner">這是 div4 inner 的內容</div>
+      其它內容
+    </div>
+    <div class="div5">這是 div5</div>
+  </body>
+</html>
