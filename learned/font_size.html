@@ -1,0 +1,48 @@
+<!-- Filename: font_size.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>font_size.html</title>
+    <style>
+      html {
+        font-size: 10px;
+      }
+
+      div.div1 {
+        font-size: 24px;
+      }
+
+      div.div2 {
+        font-size: 2rem;
+      }
+
+      div.div3 {
+        font-size: 16px;
+      }
+
+      div.div3_inner {
+        font-size: 2em;
+      }
+
+      div.div4 {
+        font-size: 16px;
+      }
+
+      div.div4_inner {
+        font-size: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">Default font size is 16px.</div>
+    <div class="div2">This is rem font size</div>
+    <div class="div3">This is em(parent) font size 16px.
+      <div class="div3_inner">This is em(Child) font size: 2em.</div>
+    </div>
+    <div class="div4">This is div4, font size 16px.
+      <div class="div4_inner">This is div4_inner, font size 150%</div>
+    </div>
+  </body>
+</html>

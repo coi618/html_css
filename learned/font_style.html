@@ -1,0 +1,103 @@
+<!-- Filename: font_style.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>font_style.html</title>
+    <style>
+      p.para1 {font-style: normal;}
+      p.para2 {font-style: italic;}
+      p.para-decoration {
+        text-decoration-line: underline overline;
+
+        text-decoration-color: red;
+        text-decoration-style: dashed;
+/*        Useless*/
+/*        text-decoration: underline red dashed;*/
+      }
+
+      p.para-transform1 {text-transform: Capitalize;}
+      p.para-transform2 {text-transform: lowercase;}
+      
+      p.test1 {
+         border: 1px solid green;
+         text-align: center;
+      }
+
+      p.test2{
+        border: 1px solid red;
+        text-align: justify;
+      }
+
+      p.para-line_height {
+        border: 1px solid red;
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      div.block {
+        border: 1px solid red;
+        white-space: pre;
+      }
+
+      p.para-color {
+        font-size: 30px;
+/*        English*/
+        color: red;
+
+/*        16 bits */
+        color: #f00;
+
+/*        rbga*/
+        color: rgba(255, 0, 0, 1);
+
+/*        hsla*/
+        color: hsla(360, 50%, 50%, .5);
+
+      }
+      body {
+        font-family: helvetica, 標楷體;
+      }
+
+      p.para-family1 { font-family: serif; }
+      p.para-family2 { font-family: sans-serif; }
+
+    </style>
+  </head>
+  <body>
+
+    <h2>Font family</h2>
+    <p class=para-fmaily1> Paragraph with serif. 有襯線</p>
+    <p class=para-fmaily2>Paragraph without serif.無襯線</p>
+
+    <h2>Text Color</h2>
+    <p class="para-color">
+      Trial and error kinda lifestyle that I lead. Leaving me high and dry. I can smile with basically anyone, but the riddle's in who I can frown beside.
+    </p>
+    <h2>White spaces</h2>
+    <div class="block">
+      This is First line.
+      This is s    s.    second line.
+      This is 3
+      rd  line?
+    </div>
+
+    <h2>Line height</h2>
+    <p class="para-line_height">But the meaning tends to vanish when it's me, myself and I again. I don't complain about it, I just don't have the time, half the time, wondering weather the weather will give me some sunshine. Reaching outward, for a life line, that I won't find, in this lifetime.</p> 
+
+    <h2>水平文字對齊</h2>
+    <p class="test1">This is text paragraph.</p>
+    <p class="test2">Traveling light's how it usually goes. Mind open wide with heart open closed.Start at the bottom, but time only knows. Unravel the tale of the world that I chose. Seek an answer in an infinite skyline, a promising refrain.</p>
+    <p class="test2">恋に恋してるあの子が、口ずさんでた流行りの歌。反吐が出る位甘い世迷言で包まれたケミカルなお菓子みたいもーいいよ上辺の台詞で飾って隙あらば夜伽に誘って求愛行動ってやつさ</p>
+    <h2>Text-transform</h2>
+    <p class="para-transform1">This is normal english paragraph.</p>
+    <p class="para-transform2">THIS IS UPPER CASE ENGLISH PARAGRAPH.</p>
+
+    <h1>Font style</h1>
+    <p class="para1">This is paragraph 1.</p>
+    <p class="para2">This is paragraph 2.</p>
+    <h2>Text-decoration</h2>
+    <p class="para-decoration">This is text-decoration.</p>
+  </body>
+</html>
